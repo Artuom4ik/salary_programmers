@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 
 
-def get_average_salary(salary):
+def predict_rub_salary(salary):
     if salary["currency"] == "RUR":
         from_salary = salary["from"]
         to_salary = salary["to"]
@@ -56,5 +56,5 @@ response.raise_for_status()
 vacancies = response.json()
 for vacancy in vacancies["items"]:
     salary = vacancy["salary"]
-    print(get_average_salary(salary))
+    print(predict_rub_salary(salary))
 # print(vacancies)
