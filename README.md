@@ -3,7 +3,7 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 ___
-#### Это программа которая показывает таблицу вакансий программиста в Москве за последние 30 дней. 
+#### Это программа которая показывает таблицу вакансий программистов в Москве за последние 30 дней. 
 ___
 >### Для запуска программы требуется:
  * Скачать [Python](https://www.python.org/) версии 3.1 или выше.
