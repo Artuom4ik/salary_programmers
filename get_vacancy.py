@@ -6,10 +6,10 @@ from get_average_salary import predict_rub_salary, get_average_salary
 
 
 def get_headhunter_vacancies():
-    url = f"https://api.hh.ru/vacancies/"
+    url = "https://api.hh.ru/vacancies/"
     programming_languages = [
-            "JavaScript", 
-            "Java", 
+            "JavaScript",
+            "Java",
             "Python",
             "Ruby",
             "PHP",
@@ -17,7 +17,7 @@ def get_headhunter_vacancies():
             "TypeScript",
             "C#",
             "C",
-            "Go" 
+            "Go"
         ]
     statistics_languages = {}
     for programming_language in programming_languages:
@@ -44,7 +44,7 @@ def get_headhunter_vacancies():
                     continue
                 vacancy_salary = predict_rub_salary(salary)
                 if not vacancy_salary:
-                    continue  
+                    continue
                 salaries_prog.append(vacancy_salary)
         average_salary, vacancies_processed = get_average_salary(salaries_prog)
         vacancies_prog["vacancies_processed"] = vacancies_processed
