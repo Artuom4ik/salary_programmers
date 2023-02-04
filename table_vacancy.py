@@ -11,14 +11,13 @@ def table_vacancies(statistics_languages):
             'Вакансий найдено',
             'Вакансий обработано',
             'Средняя зарплата']]
-    for language in statistics_languages:
-        stats_languege = []
-        stats_languege.append(language)
-        stats_languege.append(
-            statistics_languages[language]["vacancies_found"])
-        stats_languege.append(
-            statistics_languages[language]["vacancies_processed"])
-        stats_languege.append(statistics_languages[language]["average_salary"])
+    for language, params in statistics_languages.items():
+        stats_languege = [
+            language,
+            params["vacancies_found"],
+            params["vacancies_processed"],
+            params["average_salary"]
+        ]
         table_data.append(stats_languege)
     table = AsciiTable(table_data, title)
     print(table.table)
